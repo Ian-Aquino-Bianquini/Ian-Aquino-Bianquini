@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quimca e Javascript</title>
+    <style>
+        body{
+            background-color: rgb(46, 46, 46);
+            color: bisque;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <h1>Atividade de Conversor</h1>
+    <br />
+    <h2>Conversor</h2>
+    <form>
+      <input
+        type="radio"
+        checked="checked"
+        name="conversor"
+        value="1"
+        id="moltomassa"
+      />Massa para mol
+      <br />
+      <input
+        type="radio"
+        name="conversor"
+        value="0"
+        id="massatomol"
+        checked="checked"
+      />Mol para Massa
+      <br />
+      <input type="text" id="val"><label> Valor </label></input>
+      <input type="submit" value="Submit" onclick="display()" />
+    </form>
+    <script>
+      function display()
+      {
+        const x = document.getElementById("massatomol").checked;
+        var valor = document.getElementById("val").value;
+        console.log(valor)
+        if(x == false)
+        {
+          alert((valor + ((valor * 0.00794).toFixed(2))*10)/10)
+        }
+        else
+        alert(valor * 0.992122547)
+          }
+    </script>
+  </body>
+</html>
