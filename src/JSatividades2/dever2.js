@@ -1,12 +1,11 @@
-function chama() {
-  const number1 = document.getElementById("val1").value;
-  const number2 = document.getElementById("val2").value;
+function chama2() {
+  const number1 = document.getElementById("val1_2").value;
+  const number2 = document.getElementById("val2_2").value;
 
-  verifica(number1, number2);
-  console.log(verifica);
+  alert(verifica2(number1, number2));
 }
 
-function verifica(num1, num2) {
+function verifica2(num1, num2) {
   if (num1 > num2) {
     alert("o " + num1 + " é maior");
   } else {

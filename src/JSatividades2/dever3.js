@@ -1,11 +1,11 @@
-function chama() {
-  const number1 = document.getElementById("val1").value;
+function chama3() {
+  const number1 = document.getElementById("val1_3").value;
 
-  verifica(number1);
-  console.log(verifica);
+  verifica3(number1);
+  console.log(verifica3);
 }
 
-function verifica(num1) {
+function verifica3(num1) {
   if (num1 % 2 == 0) {
     if (num1 != 2) {
       alert("o " + num1 + " não é primo");
