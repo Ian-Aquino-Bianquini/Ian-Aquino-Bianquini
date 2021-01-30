@@ -1,0 +1,50 @@
+#termos {
+  display: inline-block;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+#definicaos {
+  display: inline-block;
+  margin-left: 1%;
+  border-left: 0.2cm solid black;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.button {
+  display: block;
+  background-color: rgb(30, 30, 30);
+  width: 50%;
+  height: 50%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  border-radius: 50px;
+  list-style: circle;
+  margin-bottom: 5%;
+  color: antiquewhite;
+  border: none;
+}
+
+.button:hover {
+  transition: 1s;
+  background-color: rgb(60, 60, 255);
+}
+
+.button:focus {
+  outline: thin dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
+}
+header {
+  background-color: rgb(50, 50, 50);
+  display: flex;
+  border-bottom: 0.2cm solid black;
+  margin-left: -1%;
+  margin-top: -1%;
+  margin-right: -0.45%;
+  padding-left: 2%;
+}
+html {
+  color: aliceblue;
+  background-color: rgb(14, 14, 14);
+  font-family: "Raleway", sans-serif;
+}
