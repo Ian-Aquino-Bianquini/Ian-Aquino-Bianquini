@@ -68,6 +68,7 @@ function catalog() {
       linha.appendChild(lixdiv);
       linha.setAttribute("id", i);
 
+      console.table(acervo);
       //delete
 
       lix.setAttribute("onlick", "");
@@ -80,7 +81,7 @@ function deleter() {
   acervo.forEach((val, ind) => {
     if (this.parentElement.parentElement.id == val.id + 1) {
       acervo.splice(ind, 1);
-      this.parentElement.parentElement.replaceWith("");
+      this.parentElement.parentElement.remove();
     }
   });
 }
