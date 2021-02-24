@@ -12,6 +12,10 @@ function cadastrarlivros() {
   let genero = document.getElementById("genero").value;
   let autor = document.getElementById("autor").value;
 
+  // if (titulo == "" || descricao == "" || genero == "" || autor == "") {
+  //   return alert("Por favor preencha todos os campos!");
+  // }
+
   acervo.push({
     id: i,
     titulo,
@@ -90,4 +94,23 @@ function salvarBD() {
   let pacote = document.querySelector("#result");
   pacote.value = JSON.stringify(acervo);
   // alert(pacote.value);
+}
+
+function search() {
+  var searchitem = document.getElementById("search");
+  var filter = searchitem.value.toUpperCase();
+  var table = document.getElementById("acervo");
+  var tr = table.getElementsByTagName("tr");
+
+  for (var i = 0; i < tr.length; i++) {
+    var td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      var textolinha = td.textContent || td.innerText;
+      if (textolinha.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
 }

@@ -98,3 +98,7 @@ select {
   color: black;
   background-color: rgb(168, 206, 250);
 }
+
+.unsearch {
+  display: none;
+}

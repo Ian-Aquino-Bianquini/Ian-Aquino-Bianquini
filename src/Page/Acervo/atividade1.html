@@ -8,25 +8,26 @@
   </head>
   <body>
     <h1>Cadastro de Livros</h1>
-    
-    <input type="text" id="titulo" placeholder="Título" /> <br />
-    <input type="text" id="descricao" placeholder="Descrição" /> <br />
-    <select name="genero" id="genero" placeholder="Gênero">
-      <option value="romance">Românce</option>
-      <option value="drama">Drama</option>
-      <option value="terror">Terror</option>
-      <option value="ficcao">Ficção</option>
-      <option value="tecnico">Técnico</option>
-    </select>
-    <br />
     <form onsubmit="return false">
+      <input type="text" id="titulo" placeholder="Título" autocomplete="off" /> <br />
+      <input type="text" id="descricao" placeholder="Descrição" autocomplete="off" /> <br />
+      <select name="genero" id="genero" placeholder="Gênero">
+        <option value="" disabled selected hidden >Gênero</option>
+        <option value="romance">Românce</option>
+        <option value="drama">Drama</option>
+        <option value="terror">Terror</option>
+        <option value="ficcao">Ficção</option>
+        <option value="tecnico">Técnico</option>
+      </select>
+      <br />
       <input type="text" id="autor" placeholder="Autor" type="search" autocomplete="on" /> <br />
-    </form>
       <input type="submit" id="submit" onclick="cadastrarlivros()"></input>
+    </form>
     
     
     <div id="catalog">
       <h1>Catálogo dos Livros</h1>
+      <input id="search" type="text" placeholder="Search" oninput="search()">
       <table id="acervo" class="responsive-table">
         <tr>
           <th>Título</th>
