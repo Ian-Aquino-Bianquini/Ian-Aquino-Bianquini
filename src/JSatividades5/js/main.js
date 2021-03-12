@@ -63,9 +63,9 @@ fetch("https://rafaelescalfoni.github.io/desenv_web/filmes.json").then(
         let star = document.createElement("img");
         star.src = "../img/star.png";
 
-        for (let i = 0; i <= 5; i++) {
+        for (let i = 0; i < 5; i++) {
           let currstar = star.cloneNode();
-          if (i <= starrating) currstar.className = "starfull";
+          if (i < starrating) currstar.className = "starfull";
           rating.append(currstar);
         }
 
