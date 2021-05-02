@@ -156,24 +156,11 @@ fetch("https://rafaelescalfoni.github.io/desenv_web/filmes.json").then(
           titulosbox.appendChild(a);
         });
 
-        // comentsbox.appendChild(coments);
-        // card.appendChild(comentsbox);
-
         cont.appendChild(card);
         card.appendChild(sneaker);
         card.appendChild(infos);
         cont.appendChild(comentsbox);
         body.appendChild(cont);
-        // body.appendChild(br);
       });
     })
 );
-
-function popupshow(element) {
-  const popup = document.getElementsByClassName("mypopup")[element.id];
-  const popupcoment = document.createElement("div");
-
-  console.log(popup);
-  popupcoment.setAttribute("class", "popuptext");
-  popup.classList.toggle("show");
-}
