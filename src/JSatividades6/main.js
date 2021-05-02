@@ -73,9 +73,7 @@ function evenElement() {
   var lista = [1, 2, 3, 4, 5, 6];
   alert(
     lista.filter((val) => {
-      if (val % 2 == 0) {
-        return val;
-      }
+      return val % 2 == 0;
     })
   );
 }
