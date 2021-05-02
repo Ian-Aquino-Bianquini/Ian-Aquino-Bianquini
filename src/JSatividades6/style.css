@@ -26,7 +26,7 @@
   align-items: center;
   text-align: center;
   width: 40rem;
-  height: 40rem;
+  height: 45rem;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   position: relative;
@@ -52,7 +52,7 @@
 }
 
 .dever {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .grid {

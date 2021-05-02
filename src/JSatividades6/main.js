@@ -1,54 +1,68 @@
-let meuArray = new Array(1, 4, 2, 4, 6, 10, 3);
+let meuArray = [];
 
-Array.prototype.min = function () {
-  return Math.min.apply(null, this);
-};
-Array.prototype.max = function () {
-  return Math.max.apply(null, this);
-};
-Array.prototype.uniq = function () {
-  let set = new Set(this);
-  return Array.from(set.values());
-};
-Array.prototype.sortNum = function () {
-  let arr = this;
-  arr.sort((a, b) => a - b);
-  return arr;
-};
-const mindiv = document
-  .getElementById("min")
-  .appendChild(document.createTextNode(meuArray.min()));
-const maxdiv = document
-  .getElementById("max")
-  .appendChild(document.createTextNode(meuArray.max()));
-const uniqdiv = document
-  .getElementById("uniq")
-  .appendChild(document.createTextNode(meuArray.uniq()));
-const sortdiv = document
-  .getElementById("sort")
-  .appendChild(document.createTextNode(meuArray.sortNum()));
+function add() {
+  let input = document.getElementById("input1").value;
+  let output = document.getElementById("array1");
+  meuArray.push(input);
+  console.log(meuArray);
+  output.innerHTML = meuArray.toString();
+}
+function reset() {
+  let output = document.getElementById("array1");
+  meuArray = [];
+  output.innerHTML = meuArray.toString();
+}
 
-console.log(meuArray.min()); // deve retornar 1
-console.log(meuArray.max()); // deve retornar 10
-console.log(meuArray.uniq()); // deve retornar (1, 2, 3, 4, 6, 10)
-console.log(meuArray.sortNum()); // deve retornar (1, 2, 3, 4, 4, 6, 10)
+function num1() {
+  Array.prototype.min = function () {
+    return Math.min.apply(null, this);
+  };
+  Array.prototype.max = function () {
+    return Math.max.apply(null, this);
+  };
+  Array.prototype.uniq = function () {
+    let set = new Set(this);
+    return Array.from(set.values());
+  };
+  Array.prototype.sortNum = function () {
+    let arr = this;
+    arr.sort((a, b) => a - b);
+    return arr;
+  };
+  const mindiv = document.getElementById("min");
+  const maxdiv = document.getElementById("max");
+  const uniqdiv = document.getElementById("uniq");
+  const sortdiv = document.getElementById("sort");
+
+  mindiv.innerHTML = meuArray.min();
+  maxdiv.innerHTML = meuArray.max();
+  uniqdiv.innerHTML = meuArray.uniq();
+  sortdiv.innerHTML = meuArray.sortNum();
+
+  console.log(meuArray.min()); // deve retornar 1
+  console.log(meuArray.max()); // deve retornar 10
+  console.log(meuArray.uniq()); // deve retornar (1, 2, 3, 4, 6, 10)
+  console.log(meuArray.sortNum()); // deve retornar (1, 2, 3, 4, 4, 6, 10)
+}
 
 function fibonacci() {
   const valmax = document.getElementById("valmax").value;
 
-  for (
-    var fiboArray = [0, 1], i = 0, j = 1, k = 0, x = 0;
-    k < valmax - 2;
-    i = j, j = x, k++
-  ) {
-    x = i + j;
-    fiboArray.push(x);
-  }
-  alert(fiboArray);
+  if (valmax > 1) {
+    for (
+      var fiboArray = [0, 1], num1 = 0, num2 = 1, i = 0, x = 0;
+      i < valmax - 2;
+      num1 = num2, num2 = x, i++
+    ) {
+      x = num1 + num2;
+      fiboArray.push(x);
+    }
+    alert(fiboArray);
+  } else alert(0);
 }
 
 function double() {
-  var lista = [1, 2, 3, 4, 5, 6];
+  let lista = [1, 2, 3, 4, 5, 6];
   lista.map((val) => {
     lista.push(val);
   });
