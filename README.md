@@ -26,6 +26,6 @@
   <a href = "mailto:ian.aquino2003@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   <a href="https://br.linkedin.com/in/ian-aquino-bianquini-926712207/es?trk=people-guest_people_search-card" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
  
-  ![Snake animation](https://github.com/Ian-Aquino-Bianquini/Ian-Aquino-Bianquini.github.io/blob/output/github-contribution-grid-snake.svg)
+  ![Snake animation](https://github.com/Ian-Aquino-Bianquini/Ian-Aquino-Bianquini/blob/output/github-contribution-grid-snake.svg)
  
 </div>
