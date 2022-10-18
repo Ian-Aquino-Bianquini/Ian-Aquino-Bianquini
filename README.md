@@ -1,4 +1,4 @@
-## Oi! Meu nome é Ian de Aquino Bianquini, sou desenvolvedor WEB full stack!
+## Oi! Meu nome é Ian de Aquino Bianquini, sou desenvolvedor full stack!
 <div align="center">
   <a href="https://github.com/Ian-Aquino-Bianquini">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ian-aquino-bianquini&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
